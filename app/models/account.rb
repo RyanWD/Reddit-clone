@@ -3,8 +3,10 @@ class Account < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+         
   has_many :communities, through: :subscribers
   has_many :posts
+  has_many :comments
 
   validates_presence_of :first_name, :last_name , :username
 
