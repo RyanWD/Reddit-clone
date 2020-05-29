@@ -7,7 +7,8 @@
   <p class="h4"><%= @profile.full_name %></p>
   <p> <%= @profile.username %></p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolores doloribus velit exercitationem dolore, voluptas necessitatibus tempore, excepturi quis possimus reiciendis non. Tempora, qui? Totam velit dolore ratione magni eaque.</p>
- <p>Cake day: <%= @profile.created_at.strftime("%d/%m/%y") %></p>
+  <p>Karma: <%= @profile.karma %><span class="fa fa-star text-warning"></span></p>
+  <p>Cake day: <%= @profile.created_at.strftime("%d/%m/%y") %></p>
 
 </div>
 </div>

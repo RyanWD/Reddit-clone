@@ -14,7 +14,7 @@ $(".vote").on("click", ".upvote, .downvote", function() {
     success: function() {
       console.log("success...");
     }
-  })
+  });
 
 });
 });
